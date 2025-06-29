@@ -2,13 +2,13 @@ import React from "react";
 
 export const FooterSection = (): JSX.Element => {
   return (
-    <footer className="flex w-full items-start px-20 py-6 bg-primaryblack">
-      <div className="flex w-full items-center justify-between px-8 py-0">
+    <footer className="flex w-full items-start max-sm:px-5 px-20 py-6 bg-primaryblack">
+      <div className="flex w-full items-center justify-between px-8 max-sm:px-0 py-0">
         <div className="flex items-center gap-3">
           <div className="flex items-center gap-3">
-            <div className="relative w-[39.91px] h-10">
+            {/* <div className="relative w-[39.91px] h-10">
               <div className="relative w-[23px] h-[35px] top-[3px] left-2 bg-[url(/group-2.png)] bg-[100%_100%]" />
-            </div>
+            </div> */}
 
             <div className="font-heading-h5-bold font-[number:var(--heading-h5-bold-font-weight)] text-primarywhite text-[length:var(--heading-h5-bold-font-size)] tracking-[var(--heading-h5-bold-letter-spacing)] leading-[var(--heading-h5-bold-line-height)] whitespace-nowrap [font-style:var(--heading-h5-bold-font-style)]">
               Personal

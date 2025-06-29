@@ -28,8 +28,8 @@ const experiences = [
 
 export const TestimonialsSection = (): JSX.Element => {
   return (
-    <section className="w-full bg-primaryblack py-[60px] px-20">
-      <div className="flex flex-col items-center justify-center gap-5 max-w-[1280px] mx-auto px-8">
+    <section className="w-full bg-primaryblack py-[60px]">
+      <div className="flex flex-col items-center justify-center gap-5 max-w-[1280px] mx-auto">
         <header className="flex items-center justify-center gap-4 py-5 w-full">
           <h2 className="text-primarywhite font-displaytext-regular text-[length:var(--displaytext-regular-font-size)] tracking-[var(--displaytext-regular-letter-spacing)] leading-[var(--displaytext-regular-line-height)] [font-style:var(--displaytext-regular-font-style)]">
             My

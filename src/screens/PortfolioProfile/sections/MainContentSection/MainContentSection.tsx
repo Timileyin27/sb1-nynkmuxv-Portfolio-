@@ -1,5 +1,4 @@
-import { CheckIcon } from "lucide-react";
-import React from "react";
+import { Quote } from "lucide-react";
 import { Avatar } from "../../../../components/ui/avatar";
 import { Card, CardContent } from "../../../../components/ui/card";
 import { Separator } from "../../../../components/ui/separator";
@@ -8,7 +7,7 @@ import { Separator } from "../../../../components/ui/separator";
 const testimonials = [
   {
     id: 1,
-    image: "/photo-2024-07-22-19-09-26-1.png",
+    image: "/testi-1.png",
     text: "An inspiring designer whose creativity has no bound, bringing vision to life  with sheer brillliance",
     name: "Akande Muritala",
     role: "Designer",
@@ -16,7 +15,7 @@ const testimonials = [
   },
   {
     id: 2,
-    image: "/photo-2024-09-13-19-31-27-1.png",
+    image: "/testi-2.png",
     text: "Timileyin's work captivaties, leaving a desire for more collaboration; remarkable designs perfectly match projects",
     name: "Eeman Adeniran",
     role: "Developer",
@@ -24,7 +23,7 @@ const testimonials = [
   },
   {
     id: 3,
-    image: "/img-3242-1.png",
+    image: "/testi-3.png",
     text: "Timi is a design maestro, pouring heart and soul into each projects",
     name: "Akinwande Akindele",
     role: "Developer",
@@ -41,11 +40,11 @@ export const MainContentSection = (): JSX.Element => {
             My
           </h2>
           <h2 className="text-black font-displaytext-extra-bold font-[number:var(--displaytext-extra-bold-font-weight)] text-[length:var(--displaytext-extra-bold-font-size)] tracking-[var(--displaytext-extra-bold-letter-spacing)] leading-[var(--displaytext-extra-bold-line-height)] whitespace-nowrap [font-style:var(--displaytext-extra-bold-font-style)]">
-            Testimonial
+            Testimonials
           </h2>
         </header>
 
-        <div className="flex items-center justify-between px-6 py-10 w-full">
+        <div className="flex max-md:flex-col max-sm:gap-7  items-center justify-between px-6 py-10 w-full">
           {testimonials.map((testimonial) => (
             <Card
               key={testimonial.id}
@@ -64,13 +63,17 @@ export const MainContentSection = (): JSX.Element => {
                   </Avatar>
                   <div className="absolute bottom-0 right-0 inline-flex items-center justify-center">
                     <div
-                      className={`relative w-[30px] h-[30px] ${
+                      className={`relative w-[40px] h-[40px] ${
                         testimonial.isDark
                           ? "bg-primarywhite"
                           : "bg-primaryblack"
-                      } rounded-[15px] flex items-center justify-center`}
+                      } rounded-full flex items-center justify-center`}
                     >
-                      <CheckIcon className="w-[13px] h-[9px] text-white" />
+                      <Quote
+                        className={`w-[16px] h-[16px] text-${
+                          testimonial.isDark ? "black" : "white"
+                        }`}
+                      />
                     </div>
                   </div>
                 </div>
